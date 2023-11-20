@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>practice Tow</h1>
+
+
+
+
+
+
+    <script>
+        //object
+        var std1 = {
+            fName: "fafa",
+            lName: "khaqani",
+            age: 23,
+            email: "fafakhaqani@gmail.com",
+        }
+        console.log(std1);
+        console.log(std1.age);
+        console.log(std1["email"]);
+        console.log(typeof std1);
+
+        //x and y
+        var x = 6;
+        var y = 8;
+        console.log(x);
+        console.log(y);
+        //x=6,y=8
+        var x = 4, y = 3;
+        console.log(x);
+        console.log(y);
+
+        //null
+        var lName = null;
+        console.log(lName);
+        console.log(typeof lName);
+        lName = "khaqani";
+        console.log(lName);
+        console.log(typeof lName);
+
+        //add number
+        var num = [12, 16, 18, 20, 10];
+        console.log(num);
+        console.log(num[2]);
+        num[5] = 9;
+        console.log(num);
+        console.log(typeof num);
+        num.push(22, 25);
+        console.log(num);
+        //lenghs toole array
+        //tostring tabdil b string
+        console.log(num.toString());
+        console.log(num.length);
+
+        //2D array
+        var groups = [["niko", "fafa", "maso"], ["amir", "pedram", "shayan"]]
+        console.log(groups);
+        groups[1][0] = "ali";
+        console.log(groups);
+        console.log(groups[1][1]);
+
+        //3D array
+        var kids = [["mana", "ziba", "raha"], ["shima", "marym", "lale", ["raya", "sina"]]]
+        console.log(kids);
+        console.log(kids[1][2]);
+        console.log(kids[1][3][0]);
+        //console.table
+        console.table(kids);
+
+        //delete object
+        var std1 = {
+            fName: "fafa",
+            age: 23,
+        }
+        console.log(std1);
+        std1.lNmae = "khaqanii"
+        console.log(std1);
+        delete std1.age;
+        console.log(std1);
+
+        //console.color //%c
+        var fName = "hale";
+        console.log(fName);
+        console.log("%c hale", "background:black; color:white; font-size:20px")
+        console.log(typeof fName);
+
+        //arrray refrence
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+        console.log(fruits);
+        console.log(fruits.length);
+        fruits.push("kiwi");
+        console.log(fruits);
+        console.log(typeof fruits);
+        fruits.unshift("test1", "test2")
+        console.log(fruits);
+        console.table(fruits);
+
+        //x & y 
+        //**
+        //()
+        //* /
+        //+ -
+        var x = 3;
+        var y = 2;
+        console.log(x);
+        console.log(y);
+        var y = ++x; //y= (x+1) //y=x++ y=x x=x+1
+        console.log(y);
+
+        var x = 2;
+        var y = 3
+        x += y;
+        console.log(y);
+        y = +x;
+        console.log(y);
+        var x = 3;
+        var y = 2;
+        x *= y;
+        console.log(y);
+        console.log(x);
+
+        //+
+        var txt1 = "hello ";
+        var txt2 = "fafa";
+        console.log(txt1 + txt2);
+
+        //num
+        var num1 = prompt("plese enter num1");
+        var num2 = prompt("plese enter num2");
+        console.log(num1 + num2);
+        //to number
+        var num1 = Number(prompt("plese enter num1"));
+        var num2 = Number(prompt("plese enter num2"));
+        console.log(num1 + num2);
+        console.log(typeof num1);
+
+        //txt
+        var fName = prompt("enter your name:")
+        console.log("hi " + fName);
+
+        //10 js array refrence 
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+        fruits.shift();
+        console.log(fruits);
+        fruits.unshift("kiwi");
+        console.log(fruits);
+
+        var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+        var myBest = fruits.slice(1);
+        console.log(fruits);
+    </script>
+
+
+</body>
+
+</html>
