@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body id="body">
+    <h1>Practice 3</h1>
+    <h2>If & else if</h2>
+
+    <script>
+        //speed
+        txt = null
+        var speed = 100;
+        if (speed >= 120) {
+            txt = "high speed"
+        } else if (speed < 120 && speed >= 100) {
+            txt = "normal speed"
+        } else if (speed < 100 && speed >= 60) {
+            txt = "low speed"
+        } else {
+            txt = "***"
+        }
+        console.log(txt)
+
+        //hour
+        var hour = 17;
+        if (hour >= 0 && hour <= 6) {
+            txt = "good night"
+        } else if (hour > 6 && hour <= 11) {
+            txt = "good morning"
+        } else if (hour > 11 && hour <= 16) {
+            txt = "good noon"
+        } else if (hour > 16 && hour <= 20) {
+            txt = "good after noon"
+        } else if (hour > 20 && hour <= 24) {
+            txt = "good night"
+        } else {
+            txt = "***"
+        }
+        console.log(txt)
+
+        //age
+        var age = 35;
+        if (age >= 5 && age < 15) {
+            txt = "so yung"
+        } else if (age >= 15 && age < 20) {
+            txt = "teenager"
+        } else if (age >= 20 && age < 40) {
+            txt = "yung"
+        } else if (age >= 40 && age < 65) {
+            txt = "elderly"
+        } else if (age >= 65) {
+            txt = "old"
+        } else {
+            txt = "***"
+        }
+        console.log(txt)
+
+        //price
+        var price = 35;
+        if (price >= 800) {
+            txt = "so expensive"
+        } else if (price < 800 && price >= 500) {
+            txt = "expensive"
+        } else if (price < 500 && price <= 300) {
+            txt = "normaal price"
+        } else if (price < 300 && price >= 150) {
+            txt = "cheap"
+        } else if (price < 150) {
+            txt = "off"
+        } else {
+            txt = "***"
+        }
+        console.log(txt)
+
+        //pass
+        var pass = 1377;
+        if (pass == 1379) {
+            txt = "fafa"
+        } else if (pass == 1377) {
+            txt = "niko"
+        } else {
+            txt = "error"
+        }
+        console.log(txt)
+
+        //usser
+        var usser = "shayan";
+        if (usser == "niko" || usser == "fafa") {
+            txt = "niko and fafa is on"
+        }
+        else if (usser == "amir" || usser == "shayan") {
+            txt = "amir and shyan is on"
+        } else {
+            txt = "****"
+        }
+        console.log(txt);
+
+        //mobile
+        var mob = "iphone";
+        if (mob == "iphone" || mob == "ipad") {
+            txt = "IOS is on"
+        }
+        else if (mob == "sumsong" || mob == "sony" || mob == "nukia") {
+            txt = "ANDROID is on"
+        } else {
+            txt = "****"
+        }
+        console.log(txt);
+
+        //lenghs
+        var fName = "fafa";
+        if (fName.length <= 5) {
+            txt = "every thing is ok"
+        } else {
+            txt = "***"
+        }
+        console.log(txt);
+
+        //admin
+        var admin = prompt("enter your name:")
+        var admin_p = prompt("enter your pass:");
+        if (admin.length <= 4 && admin_p.length <= 8) {
+            txt = "its correct"
+        } else {
+            txt = "not true"
+        }
+        console.log(txt);
+
+        //bank
+        var bank = "dey";
+        if (bank == "mehr" || bank == "sepah" || bank == "melli") {
+            txt = "have money"
+        } else if (bank == "refah" || bank == "dey" || bank == "mellat") {
+            txt = "no money"
+        } else {
+            txt = "***"
+        }
+        console.log(txt);
+        console.log("********");
+        //switch
+        //weekDay
+        var weekDay = "shanbe";
+        switch (weekDay) {
+            case "shanbe": txt = "saturday";
+                break;
+            case "yek shanbe": txt = "sunday";
+                break;
+            case "do shanbe": txt = "munday";
+                break;
+            case "se shanbe": txt = "tuesday";
+                break;
+            case "chahar shanbe": txt = "wednesday";
+                break;
+            case "panj shanbe": txt = "thursday";
+                break;
+            case "jomee": txt = "friday";
+                break;
+        }
+        console.log(txt);
+
+        //seasons
+        var seasons = "paeiz";
+        switch (seasons) {
+            case "bahar": txt = "spring";
+                break;
+            case "tabestan": txt = "summer";
+                break;
+            case "paeiz": txt = "fall";
+                break;
+            case "zemestan": txt = "winter";
+                break;
+        }
+        console.log(txt);
+
+        //room
+        var room = "301";
+        switch (room) {
+            case "101": txt = "state1";
+                break;
+            case "201": txt = "state2";
+                break;
+            case "301": txt = "state3";
+                break;
+        }
+        console.log(txt);
+        //age
+        var age = 45;
+        var txt = (age >= 35) ? "elderly" : "yung"
+        console.log(txt);
+
+        //user
+        var user = "amir"
+        var txt = (user == "ali" || user == "reza") ? "its correct" : "not true"
+        console.log(txt);
+
+        //dark&light mood
+
+        // const d = new Date();
+        // let hour = d.getHours();
+        var theme = "dark"
+        if (theme == "light") {
+            document.getElementById("body").style.color = "black";
+            document.getElementById("body").style.background = "white";
+        } else {
+            document.getElementById("body").innerText = "good night"
+            document.getElementById("body").style.color = "white";
+            document.getElementById("body").style.background = "darkblue";
+        }
+
+    </script>
+</body>
+
+</html>

@@ -134,28 +134,68 @@
         console.log(txt1 + txt2);
 
         //num
-        var num1 = prompt("plese enter num1");
-        var num2 = prompt("plese enter num2");
-        console.log(num1 + num2);
-        //to number
-        var num1 = Number(prompt("plese enter num1"));
-        var num2 = Number(prompt("plese enter num2"));
-        console.log(num1 + num2);
-        console.log(typeof num1);
+        // var num1 = prompt("plese enter num1");
+        // var num2 = prompt("plese enter num2");
+        // console.log(num1 + num2);
+        // //to number
+        // var num1 = Number(prompt("plese enter num1: "));
+        // var num2 = Number(prompt("plese enter num2: "));
+        // console.log(num1 + num2);
+        // console.log(typeof num1);
 
         //txt
-        var fName = prompt("enter your name:")
-        console.log("hi " + fName);
-
-        //10 js array refrence 
+        // var fName = prompt("enter your name:")
+        // console.log("hi " + fName);
+        console.log("******")
+        //10 js array mrthod
+        //at
         var fruits = ["Banana", "Orange", "Apple", "Mango"];
-        fruits.shift();
-        console.log(fruits);
-        fruits.unshift("kiwi");
-        console.log(fruits);
+        // var index = 1;
+        // var fruit = fruits.at(index);
+        console.log(fruits.at(3));
 
-        var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
-        var myBest = fruits.slice(1);
+        //concat
+        var arr1 = ["Cecilie", "Lone"];
+        var arr2 = ["Emil", "Tobias", "Linus"];
+        // var children = arr1.concat(arr2);
+        console.log(arr1.concat(arr2));
+        var arr1 = ["Cecilie", "Lone"];
+        var arr2 = ["Emil", "Tobias", "Linus"];
+        var arr3 = ["Robin"];
+        // var children = arr1.concat(arr2, arr3);
+        console.log(arr1.concat(arr2, arr3));
+
+        //constructor
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+        // var text = fruits.constructor;
+        console.log(fruits.constructor);
+        //copyWithin
+        //adad aval hazf adad dovom jaygozin
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+        // fruits.copyWithin(0, 2);
+        console.log(fruits.copyWithin(2, 0));
+        //entries
+        // var fruits = ["Banana", "Orange", "Apple", "Mango"];
+        // // var f = fruits.entries();
+        // console.log(fruits.entries());
+        //fill
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+        fruits.fill("Kiwi", 2);
+        console.log(fruits);
+        //flat
+        var myArr = [[1, 2], [3, 4], [5, 6]];
+        // var newArr = myArr.flat(2);
+        console.log(myArr.flat());
+        var myArr = [1, 2, [3, [4, 5, 6], 7], 8];
+        // var newArr = myArr.flat();
+        console.log(myArr.flat(2));
+        //flatMap
+        var myArr = [1, 2, 3, 4, 5, 6];
+        var newArr = myArr.flatMap((x) => x + 2);
+        console.log(newArr);
+        //includes
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+        fruits.includes("mango");
         console.log(fruits);
     </script>
 
